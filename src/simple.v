@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//
+//h
 //  Add code inside the module below to implement the following truth table:
 //
 //   a[2:0]         result[6:0]
