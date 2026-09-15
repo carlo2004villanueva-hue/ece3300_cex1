@@ -26,7 +26,7 @@ module simple(
 	always @ (*)
 
 		begin
-			if ( a = 3'b000 )
+			if ( a == 3'b000 )
 				result = 7'b0000000;
 			else if ( a == 3'b001 )
 		result = 7'b0000001;
