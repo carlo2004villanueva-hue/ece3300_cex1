@@ -24,6 +24,8 @@ module simple(
 // add your code here
 
 	always @ (*)
+
+		begin
 		if ( a = 3'b001 )
 		{result = 7'b0000001;}
 			else if ( a = 3'b010 )
@@ -38,7 +40,7 @@ module simple(
 							{result = 7'b0111111;}
 								else if ( a = 3'b111 )
 								{result = 7'b1111111; }
-	
+									end
 endmodule
 
 
