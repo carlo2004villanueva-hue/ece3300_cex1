@@ -26,19 +26,19 @@ module simple(
 	always @ (*)
 
 		begin
-		if ( a = 3'b001 )
+			if ( a == 3'b001 )
 		{result = 7'b0000001;}
-			else if ( a = 3'b010 )
+				else if ( a == 3'b010 )
 			{result = 7'b0000011;}
-				else if ( a = 3'b011 )
+					else if ( a == 3'b011 )
 				{result = 7'b0000111 ;}
-					else if ( a = 3'b100 )
+						else if ( a == 3'b100 )
 					{result = 7'b0001111;}
-						else if ( a = 3'b101 )
+							else if ( a == 3'b101 )
 						{result = 7'b0011111;}
-							else if( a = 3'b110 )
+								else if( a == 3'b110 )
 							{result = 7'b0111111;}
-								else if ( a = 3'b111 )
+									else if ( a == 3'b111 )
 								{result = 7'b1111111; }
 									end
 endmodule
