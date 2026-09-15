@@ -22,7 +22,23 @@ module simple(
 	      output reg [6:0] result);
    
 // add your code here
-   
+
+	always @ (*)
+		if ( a = 3'b001 )
+			result = 7'b0000001
+			else if ( a = 3'b010 )
+				result = 7'b0000011
+				else if ( a = 3'b011 )
+					result = 7'b0000111 )
+					else if ( a = 3'b100 )
+					result = 7'b0001111
+						else if ( a = 3'b101 )
+						result = 7'b0011111
+							else if( a = 3'b110 )
+							result = 7'b0111111
+								else if ( a = 3'b111 )
+								result = 7'b1111111
+	
 endmodule
 
 
